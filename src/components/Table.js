@@ -26,9 +26,8 @@ export const Table = ({
             ...doc.data(),
             id: doc.id,
         }));
-        console.log(newData);
+        //console.log(newData);
         setJobs(newData);
-
     }
     return (
         <>

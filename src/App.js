@@ -6,7 +6,7 @@ import { useState } from 'react';
 function App() {
   const [jobId, setJobId] = useState('');
   const getJobIdHandler = (id) => {
-    console.log('Id-edited:', id);
+    //console.log('Id-edited:', id);
     setJobId(id);
   };
 

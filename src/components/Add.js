@@ -75,7 +75,8 @@ export const Add = ({
     }, [id]);
 
     return (
-        <div> {isEdit
+        <div> {
+            isEdit
             ? <div className='modal'>
                 <form onSubmit={submitHandler} >
                     <div>
