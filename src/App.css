@@ -1,38 +1,111 @@
-.App {
+
+.container {
+  height: 100vh;
+}
+
+.main {
+  margin: 10px;
+}
+.addJob{
+  height: 40%;
+  margin: 5rem;
+}
+.tableJob{
+  height: 60%;
+  margin: 5rem;
+}
+.modal {
   text-align: center;
+  width: 65%;
+  position: absolute;
+  max-height: 90vh;
+  margin: auto;
+  border: 6px solid gray;
+  background-color: white;
+  padding: 3rem;
+  z-index: 30;
+  margin-top: 50px;
+  box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.59);
+}
+.modal-desc{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.btn-update{
+  margin-top: 1rem;
+}
+.table{
+  width: 100%;
+}
+.t-row{
+  height: 4rem;
+}
+.divider{
+  border-top: 2px solid #bbb;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn{
+  width: 80px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: none;
+  cursor: pointer;
+}
+.align-right {
+  text-align: right;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-delete{
+  margin-left: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn-refresh{
+  border: none;
+  font-weight: 700;
+  font-size: medium;
+  background-color: white;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.btn-create {
+  margin-top: 20px;
+}
+.btn-create:disabled{
+  pointer-events:none;
+}
+.input-cont{
+  width: 100%;
+  height: 3rem;
+}
+.input-content{
+  width: 99%;
+  height: 3rem;
+}
+.label-cont{
+  margin-bottom: 0;
+}
+.jobs-cont{
+  padding-left: 10px;
+}
+.box-btn{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content:space-between;
 }
-
-.App-link {
-  color: #61dafb;
+.search-btn{
+  background-color: rgb(248, 245, 245);
+  border: 0.1px solid rgb(211, 207, 207);
+  padding: 10px;
+  border-radius: 3px;
+  cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.form-error{
+  font-size: 13px;
+  margin-top: 2px;
+}
+@media (min-width: 930px) {
+  .modal {
+    width: 35rem;
+    left: calc(50% - 20rem);
   }
 }

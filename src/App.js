@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import { Add } from './components/Add.js';
 import './App.css';
+import { Table } from './components/Table.js';
+import { useState } from 'react';
 
 function App() {
+  const [jobId, setJobId] = useState('');
+  const getJobIdHandler = (id) => {
+    console.log('Id-edited:', id);
+    setJobId(id);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+      <main className="main">
+        <section className='addJob'>
+          <Add id={jobId} setJobId={setJobId} />
+        </section>
+        <section className='tableJob'>
+          <Table getJobId={getJobIdHandler} />
+        </section>
+      </main>
     </div>
+
   );
 }
 
