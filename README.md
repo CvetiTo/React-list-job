@@ -1,71 +1,44 @@
-# Getting Started with Create React App
+# React-JobList
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Hosting URL: 
+https://react-job-7639b.web.app
 
-In the project directory, you can run:
+### Available Scripts
 
-### `npm start`
-
+In the project directory, you can run: `npm start`
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
 ## Learn More
+It`s a simple React App with all CRUD operations and a filter.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+###	General functionality
+-   When the Create button is clicked, the content of the form creates a record.
+-   Job List button refresh the table.
+-   When the Edit button is clicked displaed a popup for the relevant record, and information of Priority can be changed.
+-   Delete button - delete the related record.
+-   Search job button - filtered and displayed records in the table in descending order of priority.
+-   Background colors for each record are: Urgent - Red, Regular - Yellow, Trivial - Blue.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+####	Error handling and Data validation
+-	The Job should be required, max 70 char, and only English letters;
+-	The Priority should be required, and select a single option of Selectbox(Urgent, Regular, Trivial);
+-	If forms is invalid buttons are disabled;
 
-### Code Splitting
+## Tehnologies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Front-end
 
-### Analyzing the Bundle Size
+    React
+    JavaScript
+    HTML
+    CSS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Back-end
 
-### Making a Progressive Web App
+    Firebase service
+   - Firestore Database 
+   
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# React-list-job" 
